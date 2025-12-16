@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yeshi - GIS Analyst & Developer Portfolio",
+  title: "Yeshi - GIS Analyst Portfolio",
   description: "GIS Analyst with 7+ years of experience in spatial data management, hazard mapping, and urban planning across Bhutan. Transforming geospatial data into actionable insights.",
 };
 
