@@ -33,7 +33,10 @@ export default function Home() {
       ],
       icon: FiDatabase,
       color: '#8b5cf6',
-      images: [] // No images found for this project
+      images: [
+        '/Project /National Property Taxation & Building Database/WhatsApp Image Dec 16 2025 (1).jpeg',
+        '/Project /National Property Taxation & Building Database/WhatsApp Image Dec 16 2025 (2).jpeg'
+      ]
     },
     {
       title: 'Zoning & COVID-19 Response - Sarpang Dzongkhag',
@@ -49,7 +52,7 @@ export default function Home() {
       color: '#f59e0b',
       images: [
         '/Project /Zoning & COVID-19 Response - Sarpang Dzongkhag/Containment Areas.jpg',
-        '/Project /Zoning & COVID-19 Response - Sarpang Dzongkhag/Land Use Plan Map Mar 16.jpg'
+        '/Project /Zoning & COVID-19 Response - Sarpang Dzongkhag/Zonewise Cases.jpg'
       ]
     },
     {
@@ -66,8 +69,7 @@ export default function Home() {
       color: '#10b981',
       images: [
         '/Project /GIS infrastructure - Gelephu Thromde/Demkhong Map.jpg',
-        '/Project /GIS infrastructure - Gelephu Thromde/LAPS Gelephu Thromde.jpg',
-        '/Project /GIS infrastructure - Gelephu Thromde/Zonewise Cases.jpg'
+        '/Project /GIS infrastructure - Gelephu Thromde/LAPS Gelephu Thromde.jpg'
       ]
     },
     {
@@ -127,7 +129,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - Mobile First */}
-      <section className="relative min-h-screen flex items-center justify-center pt-16 sm:pt-20 overflow-hidden">
+      <section className="relative  flex items-center justify-center pt-16 sm:pt-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238b5cf6' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
@@ -161,17 +163,9 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-3xl space-y-4 sm:space-y-6 text-center lg:text-left"
           >
-            <div className="text-gray-400 text-xs sm:text-sm mb-2 sm:mb-4">
-              <span className="text-gray-500">&gt;</span> whoami
-            </div>
-            
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white leading-tight">
               <Typewriter text="GIS Analyst" speed={100} />
           </h1>
-            
-            <div className="text-gray-400 text-xs sm:text-sm mb-2 sm:mb-4">
-              <span className="text-gray-500">&gt;</span> cat about.txt
-            </div>
             
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
               Over <span className="text-white font-bold">7 years</span> of experience in spatial data management, 
@@ -190,21 +184,7 @@ export default function Home() {
               </motion.a>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8 border-t border-gray-700">
-              <div>
-                <div className="text-2xl sm:text-3xl font-bold text-white">7+</div>
-                <div className="text-xs text-gray-400">years_experience</div>
-              </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-bold text-white">66</div>
-                <div className="text-xs text-gray-400">urban_centers</div>
-              </div>
-              <div>
-                <div className="text-2xl sm:text-3xl font-bold text-white">250+</div>
-                <div className="text-xs text-gray-400">team_members</div>
-              </div>
-            </div>
+          
           </motion.div>
         </div>
       </section>
@@ -218,9 +198,6 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-8 sm:mb-16"
           >
-            <div className="text-gray-400 text-xs sm:text-sm mb-2">
-              <span className="text-gray-500">&gt;</span> cat about_me.txt
-            </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2 sm:mb-4">About Me</h2>
             <div className="w-16 sm:w-24 h-0.5 bg-white" />
           </motion.div>
@@ -281,9 +258,6 @@ export default function Home() {
             viewport={{ once: true }}
             className="mt-8 sm:mt-16"
           >
-            <div className="text-gray-400 text-xs sm:text-sm mb-3 sm:mb-4">
-              <span className="text-gray-500">&gt;</span> skills --list
-            </div>
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8">Core Skills</h3>
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {skills.map((skill, index) => (
@@ -324,9 +298,6 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-8 sm:mb-16"
           >
-            <div className="text-gray-400 text-xs sm:text-sm mb-2">
-              <span className="text-gray-500">&gt;</span> history --timeline
-            </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2 sm:mb-4">Project Timeline</h2>
             <div className="w-16 sm:w-24 h-0.5 bg-white" />
           </motion.div>
@@ -351,7 +322,7 @@ export default function Home() {
                     {/* Timeline Dot */}
                     <div className="absolute left-2 sm:left-4 lg:left-6 top-4 sm:top-6 w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-full terminal-glow z-10 border-2 border-gray-900" />
                     
-                    <div className="ml-8 sm:ml-12 lg:ml-16 lg:ml-20 terminal-border bg-gray-900/50 rounded-lg p-4 sm:p-6 hover:bg-gray-900/70 transition-colors border-l-4" style={{ borderLeftColor: project.color }}>
+                    <div className="ml-8 sm:ml-12 lg:ml-20 terminal-border bg-gray-900/50 rounded-lg p-4 sm:p-6 hover:bg-gray-900/70 transition-colors border-l-4" style={{ borderLeftColor: project.color }}>
                       <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                         <div 
                           className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center text-white terminal-border"
